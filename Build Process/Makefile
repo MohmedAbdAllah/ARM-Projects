@@ -9,8 +9,8 @@ GNU_ARM_FALGS = -mcpu=$(MCPU) -march=$(MARCH) -mthumb -save-temps -nostdlib -O$(
 
 ProjectName = app_out.elf
 
-SOURCES = $(wildcard *.c) #get all cpp files names and save it on "SOURCE"
-OBJECTS = $(patsubst %.c,%.o,$(SOURCES)) #change .cpp to .o and save it on "OBJECTS"
+SOURCES = $(wildcard *.c) #get all c files names and save it on "SOURCE"
+OBJECTS = $(patsubst %.c,%.o,$(SOURCES)) #change .c to .o and save it on "OBJECTS"
 INCS = -I .
 
 all: $(ProjectName)
